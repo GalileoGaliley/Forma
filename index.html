@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма</title>
+  </head>
+  <body>
+    <div class="base" >
+      <button id="btn" type="submit" name="button" class="button">Регистрация</button>
+    </div>
+    <div id = "myModal">
+      <div id="modalBody">
+        <div class="HeadModal">
+          <h1>Регистрация</h1>
+        </div>
+        <form id = "forma" class="forma" action="hello.html" method="post">
+          <div class="foo">
+            <h2>Данные</h2>
+
+        <div class="articles">
+          <p>Фамилия*:</p>
+          <p>Имя*:</p>
+          <p>Отчество:</p>
+          <p>Дата рождения*:</p>
+          <p>Номер телефона*:</p>
+          <p>Пол:</p>
+          <p>Группа клиентов*:</p>
+          <p>Лечащий врач:</p>
+          <p>Не отправлять смс:</p>
+
+        </div>
+        <div class="values">
+            <input id = 'name' class="inp" type="text" name="name" value=""></br>
+            <input id = "familia" class="inp" type="text" name="Surname" value=""></br>
+            <input id = "papa" class="inp" type="text" name="middleName" value=""></br>
+            <input class="inp" type="date" name="date" value=""></br>
+            <input class="inp" type="tel" name="phone" value=""></br>
+            <select class="inp" name="sex">
+              <option value="">--</option>
+              <option value="Male">Муж.</option>
+              <option value="Female">Жен.</option>
+            </select></br>
+            <select class="inp" name="group">
+              <option value="">--</option>
+              <option value="V.I.P.">V.I.P.</option>
+              <option value="Problem">Проблемные</option>
+              <option value="O.M.S.">О.М.С.</option>
+            </select></br>
+            <select class="inp" name="doc">
+              <option value="">--</option>
+              <option value="Ivanov">Иванов</option>
+              <option value="Zaharov">Захаров</option>
+              <option value="Chernishova">Чернышёва</option>
+            </select></br>
+            <input type="checkbox" name="sms" value="1">
+          </div>
+        </div>
+        <div class="foo2">
+          <h2>Адрес</h2>
+          <div class="articles2">
+            <p>Индекс:</p>
+            <p>Страна:</p>
+            <p>Область:</p>
+            <p>Город:</p>
+            <p>Улица:</p>
+            <p>Дом:</p>
+
+          </div>
+          <div class="values2">
+            <input class="inp" type="text" name="index" value=""></br>
+            <input class="inp" type="email" name="country" value=""></br>
+            <input class="inp" type="text" name="" value=""></br>
+            <input class="inp" type="text" name="" value=""></br>
+            <input class="inp" type="number" value=""></br>
+            <input class="inp" type="number" value=""></br>
+          </div>
+        </div>
+        <div class="foo3">
+          <h2>Документ</h2>
+          <div class="articles3">
+          <p>Тип документа*</p>
+          <p>Серия</p>
+          <p>Номер</p>
+          <p>Кем выдан</p>
+          <p>Дата выдачи</p>
+          </div>
+          <div class="values3">
+            <select class="inp" name="documents">
+              <option value=""></option>
+              <option value="Passport">Паспорт</option>
+              <option value="Birth serteficate">Свидетельство о рождении</option>
+              <option value="Drivers license">Вод. права</option>
+
+            </select>
+            <input class="inp" type="email" name="email" value=""></br>
+            <input class="inp" type="" name="" value=""></br>
+            <input class="inp" type="date" name="" value=""></br>
+            <input class="inp" type="number" value=""></br>
+          </div>
+        </div>
+          <button id = "enter" class="button in" type="submit" name="enter">Зарегистрировать</button>
+
+
+        </form>
+            
+
+            <button id = "closed" type="button" name="closed">✕</button>
+      </div>
+    </div>
+    <script src="modal.js" charset="utf-8"></script>
+    <script src = "form.js" charset="utf-8"></script>
+
+    </script>
+  </body>
+</html>
